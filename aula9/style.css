@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #fff0f5;
+    color: #4a2c2a;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px 16px;
+}
+
+/* Classe .card serve de base para todos os cards */
+.card {
+    background-color: #ffffff;
+    border: 2px solid #ffb6c1;
+    border-radius: 15px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+/* Promoção do dia */
+#promo-dia {
+    background-color: #ff69b4;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+}
+
+/* Sorvete em destaque */
+.destaque {
+    border-color: #87ceeb;
+    background-color: #e6f7ff;
+}
+
+/* Sorvete esgotado */
+.esgotado {
+    opacity: 0.5;
+}
+
+.esgotado h4 {
+    text-decoration: line-through;
+}
