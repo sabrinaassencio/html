@@ -1,78 +1,143 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura Semântica do HTML</title>
+
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meu Site Responsivo</title>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <!-- Cababeçalho da página - esta linha é um comentário -->
-    <header>
-        <h1>Estrutura Semântica do HTML</h1>
+
+    <!-- AVISO -->
+    <div class="anotacao">
+        <p>Diminua a janela do navegador para visualizar o site responsivo.</p>
+    </div>
+
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+
+        <h1>Meu Site Responsivo</h1>
+
+        <p>Um site que se adapta a qualquer tela!</p>
+
     </header>
-    <!--Conteúdo principal da página-->
-    <main>
-        <p>Meu diretório de arquivos</p>
-        <a href="/aula3/index.html">
-            <button
-                 style = "background-color:
-             #da9bdcf8;
-             width: 75px; height : 40px;
-             color: #F2F4FD;
-             border : 2px solid #F2F4FD;
-             border-radius:35px">Aula 3</button></a>
 
-          <a href="/aula4/index.html">
-            <button
-                 style = "background-color:
-             #da9bdcf8;
-             width: 75px; height : 40px;
-             color: #F2F4FD;
-             border : 2px solid #F2F4FD;
-             border-radius:35px">Aula 4</button></a>
+    <!-- MENU -->
+    <nav class="barra_nav">
 
-           <a href="/aula7/tabela.html">
-            <button
-                 style = "background-color:
-             #da9bdcf8;
-             width: 75px; height : 40px;
-             color: #F2F4FD;
-             border : 2px solid #F2F4FD;
-             border-radius:35px">Aula 7</button></a>
+        <a href="#inicio">Início</a>
 
-           <a href="./aula9/index.html">
-                <button
-                 style = "background-color:
-             #da9bdcf8;
-             width: 75px; height : 40px;
-             color: #F2F4FD;
-             border : 2px solid #F2F4FD;
-             border-radius:35px">Aula 9</button></a>
+        <a href="#sobre">Sobre</a>
 
-             <a href="./aula10/comportamento.html">
-                 <button
-                 style = "background-color:
-             #da9bdcf8;
-             width: 75px; height : 40px;
-             color: #F2F4FD;
-             border : 2px solid #F2F4FD;
-             border-radius:35px">Aula 10</button></a>
+        <a href="#conteudo">Conteúdo</a>
 
-              <a href="aula14/index.html">
-                 <button
-                 style = "background-color:
-             #da9bdcf8;
-             width: 75px; height : 40px;
-             color: #F2F4FD;
-             border : 2px solid #F2F4FD;
-             border-radius:35px">Aula 14</button></a>
+        <a href="#contato">Contato</a>
 
+    </nav>
 
-    </main>
-    <!-- Rodapé da página esta linha é um comentário -->
-    <footer>
-        <p>&copy; 2026 TDS1. Sabrina Assencio</p>
-        <p>Todos os direitos </p>
+    <!-- CONTEÚDO EM COLUNAS -->
+    <div class="coluna" id="inicio">
+
+        <!-- LATERAL -->
+        <aside class="lateral" id="sobre">
+
+            <h2>Sobre mim</h2>
+
+            <p class="legenda">Conheça um pouco sobre este site.</p>
+
+            <div class="imagem_falsa">
+                Minha imagem
+            </div>
+
+            <p>
+                Este espaço pode ser utilizado para apresentar
+                informações, curiosidades e novidades.
+            </p>
+
+            <h3>Mais informações</h3>
+
+            <p>
+                Aqui você pode colocar outros textos
+                e informações importantes.
+            </p>
+
+            <div class="imagem_falsa2">
+                Espaço para imagem
+            </div>
+
+            <div class="imagem_falsa2">
+                Espaço para imagem
+            </div>
+
+            <div class="imagem_falsa2">
+                Espaço para imagem
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="principal" id="conteudo">
+
+            <article>
+
+                <h2>TECNOLOGIA E INOVAÇÃO</h2>
+
+                <p class="legenda">Publicado em 26 de novembro de 2026</p>
+
+                <div class="imagem_falsa3">
+                    Imagem do conteúdo
+                </div>
+
+                <h3>Conhecendo o mundo da tecnologia</h3>
+
+                <p>
+                    A tecnologia está presente em nosso cotidiano.
+                    Ela facilita a comunicação, os estudos,
+                    o trabalho e diversas atividades do dia a dia.
+                </p>
+
+            </article>
+
+            <article>
+
+                <h2>A IMPORTÂNCIA DA INTERNET</h2>
+
+                <p class="legenda">Publicado em 26 de novembro de 2026</p>
+
+                <div class="imagem_falsa3">
+                    Imagem do conteúdo
+                </div>
+
+                <h3>Conectando pessoas e conhecimentos</h3>
+
+                <p>
+                    A internet permite compartilhar informações,
+                    aprender coisas novas e conectar pessoas
+                    de diferentes lugares do mundo.
+                </p>
+
+            </article>
+
+        </main>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape" id="contato">
+
+        <p>Meu Site Responsivo © 2026</p>
+
+        <p>Todos os direitos reservados.</p>
+
     </footer>
+
 </body>
+
 </html>

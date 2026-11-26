@@ -1,0 +1,188 @@
+
+/* CONFIGURAÇÃO GERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* AVISO */
+
+.anotacao {
+    background-color: rgb(244, 248, 19);
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.anotacao p {
+    margin: 8px 0;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+
+    background-color: #0a1128;
+
+    background-image: url(../imagem/banner_responsivo.png);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.cabecalho h1 {
+    font-size: 38px;
+}
+
+.cabecalho p {
+    font-size: 18px;
+}
+
+/* MENU DE NAVEGAÇÃO */
+
+.barra_nav {
+    display: flex;
+    background-color: #333;
+}
+
+.barra_nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    flex: 1;
+}
+
+.barra_nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.barra_nav a:focus-visible {
+    outline: 3px solid #f68e36;
+    outline-offset: -3px;
+}
+
+/* COLUNAS */
+
+.coluna {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* LATERAL */
+
+.lateral {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.principal {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 35px;
+}
+
+article h2 {
+    color: #222;
+}
+
+.legenda {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* IMAGENS */
+
+.imagem_falsa {
+    background-color: #0ec40e7e;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.imagem_falsa2 {
+    background-color: #c7313191;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.imagem_falsa3 {
+    background-color: #313bc777;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* RESPONSIVIDADE */
+
+/* TABLETS E CELULARES */
+
+@media screen and (max-width: 768px) {
+
+    .coluna {
+        flex-direction: column;
+    }
+
+}
+
+/* CELULARES */
+
+@media screen and (max-width: 500px) {
+
+    .barra_nav {
+        flex-direction: column;
+    }
+
+    .cabecalho {
+        background-image: url(../imagem/banner_celular_420x250.png);
+    }
+
+    .cabecalho h1 {
+        font-size: 28px;
+    }
+
+    .cabecalho p {
+        font-size: 16px;
+    }
+
+}
+
+/* CELULARES PEQUENOS */
+
+@media screen and (max-width: 400px) {
+
+    .cabecalho h1 {
+        font-size: 23px;
+    }
+
+}
